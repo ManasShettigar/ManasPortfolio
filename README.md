@@ -1,3 +1,22 @@
+# Portfolio Website – Manas
+
+A fully personal portfolio website showcasing my professional journey, technical skills, certifications, projects, and achievements. Built using **React** and **Material UI**, the site provides a seamless user experience across all devices with an elegant, modern design. It features interactive sections like **Experience, Skills, Projects, Education, Certifications, and Hobbies**, along with a unique **“Fun Mode”**, where my niece gives a playful walkthrough of the portfolio. The website also integrates smooth navigation, optimized layouts, and clean component-based architecture to highlight both creativity and technical proficiency.
+
+## Tech Stack
+
+- **Frontend:** React, Material UI, CSS  
+- **Tools:** Git, VS Code, Node.js  
+- **Hosting:** GitHub Pages / Netlify  
+
+## Key Features
+
+- Fully responsive design for all screen sizes  
+- Animated and interactive UI components  
+- Fun Mode with character-driven narration  
+- Organized, modular React component structure  
+- Resume download and quick contact options
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
