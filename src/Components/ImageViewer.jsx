@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Box, Card, CardMedia } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 
 const ImageViewer = (props) => {
+    const imageRef= useRef(null)
+    useEffect(() => {
+        imageRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, []);
   return (
     <Box
       sx={{
@@ -13,7 +17,8 @@ const ImageViewer = (props) => {
         gap:'10px',
         // width: "100%",
         p: { xs: 1, sm: 2 },
-      }}
+    }}
+    ref={imageRef}
       className="imageViewer"
     // style={{position:"relative"}}
     >
@@ -36,8 +41,8 @@ const ImageViewer = (props) => {
           src={props.src}
           alt={props.alt || "Image"}
           sx={{
-            width: "100%",
-            height: { xs: 200, sm: 250, md: 300 },
+            width:{ xs: 300, sm: 350, md: 400 , lg: 600},
+            // maxHeight: { xs: 400, sm: 500, md: 700 , lg : 00 },
             objectFit: "cover",
           }}
         />

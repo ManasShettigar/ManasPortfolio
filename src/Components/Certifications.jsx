@@ -3,7 +3,7 @@ import { Grid, Card, CardActionArea, CardMedia, CardContent, Typography, Box } f
 import certificateData from './CertificateData'
 import PDFViewer from "./PDFViewer";
 
-const Certifications = () => {
+const Certifications = ({mode}) => {
 
 const [pdfView, setPdfView] = useState(false)
 const [currView, setCurrView] = useState(false)
@@ -31,6 +31,17 @@ const handlecCurrView=(val,file)=>{
       }}
       
       >
+         {mode&&<Typography
+                      variant="h5"
+                      sx={{
+                        mb: 2,
+                        fontWeight: "600",
+                        color: "primary.main",
+                        textAlign: { xs: "center", sm: "center", md: "left" },
+                      }}
+                    >
+                      Certifications
+                    </Typography>}
         {pdfView && <PDFViewer pdf={file} close ={close}/>}
       <Grid container spacing={3} justifyContent="center" style={{
     pointerEvents: pdfView ? "none" : "auto",

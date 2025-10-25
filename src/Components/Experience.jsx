@@ -33,10 +33,20 @@ const experiences = [
 `,
   },
 ];
-const Experience = () => {
+const Experience = ({mode}) => {
   return (
     <div className="experienceSection">
-      {/* <Box sx={{ maxWidth: 600, color: "white" }}> */}
+       {mode&&<Typography
+              variant="h5"
+              sx={{
+                mb: 2,
+                fontWeight: "600",
+                color: "primary.main",
+                textAlign: { xs: "center", sm: "center", md: "left" },
+              }}
+            >
+              Experience
+            </Typography>}
       <Stepper className="stepper" orientation="vertical">
         {/* {experiences.map((exp, index) => ( */}
         {/* <Step key={index} active> */}

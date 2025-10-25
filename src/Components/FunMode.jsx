@@ -164,7 +164,7 @@ background:
         }}
       />
     </Box>
-      <Experience/>
+      <Experience mode={true}/>
 
       <Box
       sx={{
@@ -226,7 +226,7 @@ background:
       </Paper>
           
     </Box>
-    <Skills/>
+    <Skills mode={true}/>
 <Box
       sx={{
         display: "flex",
@@ -288,7 +288,7 @@ background:
             }}
           />
     </Box>
-    <Projects/>
+    <Projects mode={true}/>
 <Box
       sx={{
         display: "flex",
@@ -351,7 +351,7 @@ background:
       </Paper>
           
     </Box>
-    <Education/>
+    <Education mode={true}/>
     <Box
       sx={{
         display: "flex",
@@ -415,7 +415,7 @@ background:
             }}
           />
     </Box>
-    <Certifications/>
+    <Certifications mode={true}/>
     <Box
       sx={{
         display: "flex",
@@ -478,7 +478,7 @@ background:
       </Paper>
           
     </Box>
-    <Hobbies/>
+    <Hobbies mode={true}/>
      <Box
         component="img"
         src={Princess8}

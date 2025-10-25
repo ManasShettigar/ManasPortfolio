@@ -16,7 +16,7 @@ const onLeave = () =>{
 }
 const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '../assests/ManasShettigarCV.pdf'; 
+    link.href = 'https://github.com/ManasShettigar/ManasPortfolio/raw/refs/heads/master/public/ManasShettigarCV.pdf'; 
     link.download = 'Manas_Gopal_Shettigar_Resume.pdf'; 
     link.click();
   };
@@ -149,30 +149,3 @@ const handleResumeDownload = () => {
 }
 
 export default InfoSection
-
-/* <div className='infoSection' > 
-    <img className='profileImage' src={ProfileImage} alt="ManasProfileImage" />
-    <div className="profileDispaly">
-<h2 className='profileDispalyH2'>MANAS GOPAL SHETTIGAR</h2>
-<div>
-
-    <div style={{margin:'none'}}>JAVA FULL STACK DEVELOPER</div>
-    <div>SDE @ Reliance JIO</div>
-   
-</div>
-
-    </div>
-    <div className="IntroC">
-
-
-    <h4 style={{textAlign:'justify'}}>
-        {/* <strong style={{color:'#224ce7'}} > Introduction : </strong> */
-        // <strong style={{color:'#3b82f6'}} > Introduction :  </strong>
-    //      3+ years of experience as a Java Full Stack SDE, specializing in designing and scaling enterprise web applications. Proficient in building secure, high-performance <span className='highlights'>RESTful APIs</span> using  <span className='highlights'>Spring Boot</span>, developing responsive UIs with <span className='highlights'>React</span>, and optimizing <span className='highlights'>
-    //        SQL </span> databases. Hands-on experience with CI/CD and DevOps principles <span className='highlights'>(Kubernetes, Docker, NGINX)</span>. Deep commitment to code quality, performance optimization, and Agile methodologies.
-    // </h4>
-    // </div>
-    // <div className="resumeDownload" onMouseEnter={onEnter} onMouseLeave={onLeave} onClick={handleResumeDownload}> 
-    //     <div>{resumeButtonText}</div> <img className='resumeIcon' src={ResumeIcon} alt="ResumeIcon" />
-    // </div>
-    // </div> */}

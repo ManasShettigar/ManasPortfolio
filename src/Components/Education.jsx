@@ -8,9 +8,20 @@ import {
   StepContent,
   Typography,
 } from "@mui/material";
-const Education = () => {
+const Education = ({mode}) => {
   return (
     <div className='experienceSection'>
+         {mode&&<Typography
+                      variant="h5"
+                      sx={{
+                        mb: 2,
+                        fontWeight: "600",
+                        color: "primary.main",
+                        textAlign: { xs: "center", sm: "center", md: "left" },
+                      }}
+                    >
+                      Education
+                    </Typography>}
         <Stepper className="stepper" orientation="vertical">
   <Step active>
     <StepLabel StepIconComponent={() => <span className="customIcon"></span>}>

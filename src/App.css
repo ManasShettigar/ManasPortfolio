@@ -24,7 +24,7 @@
 
 }
 .infoSection{
-  /* height: calc(100vh - 150px); */
+  /* height: auto; */
 font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -41,8 +41,8 @@ font-family: "Poppins", sans-serif;
   place-items: center;
   color: aliceblue;
   border-radius: 10px;
-  overflow-y: scroll;
-  /* margin-bottom: 200px; */
+  overflow-y: auto; 
+  max-height: 100%; 
 }
 
 .footer{
@@ -138,10 +138,10 @@ width: 100%;
 .sections{
   /* width: auto; */
   /* max-width: calc(400px + 4vmin); */
-  width: calc(500px + 4vmin);
+  width: 70%;
   margin-top: 15px;
   /* margin-left: 15px; */
-  height: 45px;
+  min-height: fit-content;
   /* height: 220px; */
   display: flex;
   justify-content: space-between;
@@ -149,6 +149,7 @@ width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+  flex-wrap: wrap;
   span{
     /* min-width: fit-content; */
     /* max-width:125px; */
@@ -193,7 +194,9 @@ width: 100%;
   .sectionContainer{
     flex-grow: 1;
     background-color: #1f1f23;
-      overflow-y:scroll;
+      /* overflow-y:scroll; */
+       overflow-y: auto; 
+  max-height: 100%; 
 
   }
   /* For Chrome, Edge, Safari */
@@ -213,6 +216,24 @@ width: 100%;
 }
 
 .sectionContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b6b; /* hover effect */
+}
+.infoSection::-webkit-scrollbar {
+  width: 8px; /* width of scrollbar */
+}
+
+  .infoSection::-webkit-scrollbar-track {
+  background: #1f1f23; /* track color */
+  border-radius: 4px;
+}
+
+.infoSection::-webkit-scrollbar-thumb {
+  background-color: #4f4f4f; /* thumb color */
+  border-radius: 4px;
+  border: 2px solid #1f1f23; /* optional spacing around thumb */
+}
+
+.infoSection::-webkit-scrollbar-thumb:hover {
   background-color: #6b6b6b; /* hover effect */
 }
 .certificateSection{
@@ -312,7 +333,7 @@ h3{
 }
 .resumeDownload{
   width: 140px;
-  height: 50px;
+  min-height: 50px;
   display:flex;
   padding-inline: 12px;
   font-weight: 600;
@@ -369,7 +390,9 @@ background-color: #1f6ee6; /* slightly darker on hover */
     flex-direction: column;
   }
   .sections {
-    width: 30%;
+    width: 80%;
+    flex-wrap: wrap;
+    min-height: fit-content;
   }
 /* 
   .infoSection {
@@ -383,6 +406,14 @@ background-color: #1f6ee6; /* slightly darker on hover */
   } 
   .sectionsToggle{
   height: 50px;
+}
+.contact-primary{
+font-size: medium;
+gap: 10px;
+}
+.footer{
+  gap: 10px;
+  margin-block: 5px;
 }
 
 }
@@ -417,7 +448,7 @@ background-color: #1f6ee6; /* slightly darker on hover */
     font-weight: 500;
   } 
   .sectionsToggle{
-  height: 50px;
+  height: 100px;
 }
 .modeToggle{
   /* bottom: 0; */
@@ -433,5 +464,18 @@ background-color: #1f6ee6; /* slightly darker on hover */
 }
 .contact-social{
   margin-bottom: 20px;
+}
+.contact-primary{
+font-size: calc(7px + 1vmin);
+}
+.pdfViewer{
+  iframe{
+    max-width: 250px;
+    max-height: 300px;
+    /* height: 160px; */
+  }
+  .imageViewer{
+    height: 300px;
+  }
 }
 }

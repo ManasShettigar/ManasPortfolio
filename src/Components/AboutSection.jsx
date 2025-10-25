@@ -7,6 +7,7 @@ import Certifications from './Certifications';
 import Hobbies from './Hobbies';
 import FunMode from './FunMode';
 import { Box, Stack, Typography } from "@mui/material";
+import Projects from './Projects';
 
 const AboutSection = () => {
     const [checked, setChecked] = useState(false);
@@ -71,12 +72,13 @@ const handleChange = (event) => {
         <div className="sectionContainer">
             {
 !checked ?<>
-                {experience?<Experience/>:""}
-            {education?<Education/>:""}
-            {skills?<Skills/>:""}
-            {certifications?<Certifications/>:""}
-            {hobbies?<Hobbies/>:""}
-</>:<FunMode/>
+                {experience?<Experience mode={checked}/>:""}
+            {education?<Education mode={checked}/>:""}
+            {skills?<Skills mode={checked}/>:""}
+            {projects?<Projects mode={checked}/>:""}
+            {certifications?<Certifications mode={checked}/>:""}
+            {hobbies?<Hobbies mode={checked}/>:""}
+</>:<FunMode />
         }
         </div>
 

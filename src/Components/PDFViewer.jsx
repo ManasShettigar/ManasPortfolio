@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 const PDFViewer = (props) => {
+    const pdfRef= useRef(null)
+    useEffect(() => {
+    pdfRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, []);
   return (
-    <div className='pdfViewer'>
+    <div className='pdfViewer' ref={pdfRef}>
          <iframe
   src={props.pdf}
   width="700px"
