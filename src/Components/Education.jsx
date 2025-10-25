@@ -17,7 +17,7 @@ const Education = ({mode}) => {
                         mb: 2,
                         fontWeight: "600",
                         color: "primary.main",
-                        textAlign: { xs: "center", sm: "center", md: "left" },
+                        textAlign: "center",
                       }}
                     >
                       Education

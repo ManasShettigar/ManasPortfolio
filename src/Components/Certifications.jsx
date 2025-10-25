@@ -37,7 +37,7 @@ const handlecCurrView=(val,file)=>{
                         mb: 2,
                         fontWeight: "600",
                         color: "primary.main",
-                        textAlign: { xs: "center", sm: "center", md: "left" },
+                        textAlign: "center",
                       }}
                     >
                       Certifications
