@@ -17,7 +17,7 @@ import AIJPG from "../assests/certificates/certificatePreview/ArtificialIntellig
 import Industy4JPG from "../assests/certificates/certificatePreview/Industry4.jpg"
 
 const certificateData=[
-    { name: "Web Design Specialization", file: WebDesignPDf, preview: WebDesignJPG },
+  { name: "Web Design Specialization", file: WebDesignPDf, preview: WebDesignJPG },
   { name: "Python for Everybody Specialization", file: PythonSpeclicationPDf, preview: PythonSpeclicationJPG },
   { name: "Graphic Design Certificate", file: GraphicDesignPDf, preview: GraphicDesignJPG },
   { name: "Google IT Automation with Python", file: GoogleAutomationPDf, preview: GoogleAutomationJPG },
